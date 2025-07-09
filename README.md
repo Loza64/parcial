@@ -5,7 +5,7 @@ Este repositorio contiene un proyecto para evaluar y practicar los conceptos de 
 ### Estudiantes
 - **Nombre del estudiante 1**: Carlos Roberto Loza Castillo - 00002522
 - **Nombre del estudiante 2**: Kelvin Armando Nieto Rivas - 00083522
-- Sección: [Tu sección aquí]
+- Sección: 02
 ---
 
 ## Sistema de Soporte Técnico
