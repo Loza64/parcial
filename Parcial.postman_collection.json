@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "13cd54c0-ba68-447f-9a93-709369ca22bd",
+		"name": "Parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19635488"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDQsImlhdCI6MTc1MTYzNzQwNywiZXhwIjoxNzUyMjQyMjA3fQ.NmIXzydsCbUGQ2dOjUWt5fWRcVPg1-xcQYucWoKTxCA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5173/api/clients?populate=*&pagination[pageSize]=6&pagination[page]=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5173",
+					"path": [
+						"api",
+						"clients"
+					],
+					"query": [
+						{
+							"key": "populate",
+							"value": "*"
+						},
+						{
+							"key": "pagination[pageSize]",
+							"value": "6"
+						},
+						{
+							"key": "pagination[page]",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJpZCI6MiwiaWF0IjoxNzUyMDI2NTIzLCJleHAiOjE3NTIwMzAxMjN9.IALiFiOEPvg56R-TG8vDUMi2HlCV3zY0QWeoCUahSnFAUd7jJSslpR8mPwqsLGnX",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"Loza62\",\n  \"email\": \"usuario345@ejemplo.com\",\n  \"phone\": \"123456290\",\n  \"password\": \"qwert\",\n  \"roll\": \"USER\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/usuarios/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"usuarios",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list usuarios",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJpZCI6MiwiaWF0IjoxNzUyMDI2NTIzLCJleHAiOjE3NTIwMzAxMjN9.IALiFiOEPvg56R-TG8vDUMi2HlCV3zY0QWeoCUahSnFAUd7jJSslpR8mPwqsLGnX",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/usuarios/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"usuarios",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list tieckets",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJpZCI6MiwiaWF0IjoxNzUyMDI3MTM4LCJleHAiOjE3NTIwMzA3Mzh9.Fb9aZ9Jyjgk_MZPMho4rd1_4pIxKmtFJmIl_TF6VlZGrTYibp-sUIC138bUpMuN9",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/tickets/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"tickets",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create ticked",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJpZCI6NiwiaWF0IjoxNzUyMDI2ODEwLCJleHAiOjE3NTIwMzA0MTB9.eyKlm5OuYzStGYojuQf_lVw1Qh5q2qsffD5NZdl70KkUFLj7QhmqaCT3_SaaWYaW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"codigo\" :\"443243242\",\n    \"state\": \"pending\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/tickets/created",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"tickets",
+						"created"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update state ticket",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJpZCI6MiwiaWF0IjoxNzUyMDI3MzMxLCJleHAiOjE3NTIwMzA5MzF9.07t2sguS8RtaQyEXFzHSfNNqwMEs6FZUPRvpoCHvYe8Hm-zHu-s1O0lbWO1O2Kl7",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idTicket\": 1,\n    \"state\": \"PAYMENT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/tickets/state/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"tickets",
+						"state",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
