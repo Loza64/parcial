@@ -83,3 +83,39 @@ mvn clean package -DskipTests# spring-security-template
 docker build -t parcial .
 
 docker run -p 4000:4000 parcial
+
+### Extras
+---
+Para instalar Maven dirigirse al siguiente enlace 
+
+https://maven.apache.org/download.cgi
+
+En la sección de files, descargar: 	apache-maven-3.9.10-bin.zip
+
+Extraer la carpeta
+
+Copiar y pegar la carpeta en la raíz del disco
+
+Luego entrar a la carpeta bin
+
+Copiar la ruta: C:\apache-maven-3.9.10\bin
+
+Editar las variables de entorno en PATH, pegar la ruta copiada
+
+### Aclaración
+---
+
+En la postman collection hubo un error con el endpoint de login:
+
+1. Debe ser POST en lugar de GET 
+
+2. La url debe ser: http://localhost:4000/api/usuarios/login
+
+3. El user admin es el siguiente: 
+
+```
+{
+    "username":"Loza64",
+    "password":"qwert"
+}
+```
