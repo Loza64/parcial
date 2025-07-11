@@ -76,7 +76,7 @@ _Si van a crear mas endpoints como el login o registrarse recuerden actualizar p
 ### Generar el archivo JAR
 Ejecuta el siguiente comando en la raíz del proyecto:
 
-mvn clean package -DskipTests# spring-security-template
+mvn clean package -DskipTests
 
 ### Comandos para ejecutar docker
 
